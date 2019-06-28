@@ -3,6 +3,7 @@
     "name": "Udemy Progress",
     "version": "1.0",
     "description": "Calculate your udemy course not by number of videos but by length of videos",
+    "homepage_url": "https://github.com/burak-yildirim/udemy-progress",
     "icons": {
         "48": "icons/progress-48.png",
         "32": "icons/progress-32.png"
