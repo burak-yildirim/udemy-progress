@@ -8,7 +8,7 @@ Plus I am bored :)
 
 ### How
 It is activated only on your course page and read data from the page. Since not all the lectures are 
-loaded on DOM, It needs to do some clicks. Don't worry, it will still only take couple of seconds.
+loaded on DOM, It needs to do some clicks. Don't worry, it will still take only couple of seconds.
 
 NOTE: It reads data from lectures's tags, and those lengths are given approximate by udemy
 (for example for 1min 42sec long lecture, it is written 2min).
