@@ -4,7 +4,6 @@ const browser = (function () {
 
 
 function popupOpen() {
-    console.log("Extension popup is opened.");
     var tab = null;
 
     function sendBrowserMessage(obj) {
@@ -112,9 +111,11 @@ function popupOpen() {
         document.getElementById("finishedLectures").innerText = `${report.finishedLectures}`;
         document.getElementById("sectionCount").innerText = `${report.sectionCount}`;
 
+        document.body.style.cursor = "auto";
         if (report.status === "analyzing") {
             setAnalyzeButton("analyzing");
             document.getElementById("buttonInfo").innerHTML = "Analyzing ..";
+            document.body.style.cursor = "progress";
         } else if (report.status === "completed") {
             setAnalyzeButton("ready");
             document.getElementById("buttonInfo").innerHTML = "Completed";
@@ -146,6 +147,15 @@ function popupOpen() {
         }, buildAnalyzer);
     }
 
+    /**
+     * Add click event to homepage element
+     */
+    var homepageElm = document.getElementById("homepage");
+    homepageElm.addEventListener("click", function () {
+        var url = homepageElm.getAttribute("href");
+        browser.tabs.create({ active: true, url });
+        window.close();
+    });
 
 }
 

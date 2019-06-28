@@ -2,15 +2,23 @@ html, body {
     width: 300px;
     background-color:#55db71;
     color: #2f4984;
+    cursor: auto;
 }
 
 #generalAnalytics > p {
     text-align: left;
     font-size: 1em;
-    cursor: pointer;
     padding: 7px;
 }
 
 #generalAnalytics > span {
     text-align: right;
+    margin-left: 3px;
+}
+
+.homepage{
+    text-align: left;
+    font-size: 0.85em;
+    cursor: pointer;
+    margin: 10px 0px 0px 2px;
 }
