@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Udemy Progress",
+    "version": "1.0",
+    "description": "Calculate your udemy course not by number of videos but by length of videos",
+    "icons": {
+        "48": "icons/progress-48.png",
+        "32": "icons/progress-32.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.udemy.com/*/learn/lecture/*"
+            ],
+            "js": [
+                "content-scripts/content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icons/progress-32.png",
+        "default_title": "Udemy Progress",
+        "default_popup": "popup/popup.html"
+    }
+}

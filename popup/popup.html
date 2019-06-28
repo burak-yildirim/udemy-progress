@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div id="generalAnalytics">
+        <p id="isValidUrl" style="font-weight: bold;">Non-valid URL.</p>
+        <p>Course length: <span id="totalTime">NONE</span></p>
+        <p>Completed lessons' length: <span id="watchTime">NONE</span></p>
+        <p>Progress: <span id="progress">NONE</span></p>
+        <br>
+        <p>Total Lecture Count: <span id="totalLectures">NONE</span></p>
+        <p>Finished Lecture Count: <span id="finishedLectures">NONE</span></p>
+        <p>Section Count: <span id="sectionCount">NONE</span></p>
+        <p id="errorParag" hidden></p>
+        <div id="buttonDiv">
+            <button id="analyzeButton" disabled status="disabled">Analyze</button>
+            <span id="buttonInfo"></span>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
