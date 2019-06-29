@@ -17,8 +17,8 @@ NOTE: It reads data from lectures's tags, and those lengths are given approximat
 (for example for 1min 42sec long lecture, it is written 2min).
 
 ### Download
-*[For Firefox](https://addons.mozilla.org/en-US/firefox/addon/udemy-progress/)
-*[For Chrome-like Browsers](chromelike-download/udemy-progress.crx)
+* [For Firefox](https://addons.mozilla.org/en-US/firefox/addon/udemy-progress/)
+* [For Chrome-like Browsers](chromelike-download/udemy-progress.crx)
 
 For chrome-like browsers, you need to add the extension manually. Simply open your browser's
 extensions page and drag the '.crx' file on.
