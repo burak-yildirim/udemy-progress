@@ -23,6 +23,9 @@ NOTE: It reads data from lectures's tags, and those lengths are given approximat
 For chrome-like browsers, you need to add the extension manually. Simply open your browser's
 extensions page and drag the '.crx' file on.
 
+You can also download this project and add it to your browser without packing. Most of common 
+browsers support that, but they may require you to activate developer mode for extensions.
+
 ### Sample Pictures
 
 Sample valid URL:
