@@ -1,9 +1,8 @@
-const browser = (function () {
-    return window.msBrowser || window.browser || chrome || window.chrome;
-})();
-
-
 function popupOpen() {
+    const browser = (function () {
+        return window.msBrowser || window.browser || chrome || window.chrome;
+    })();
+
     var tab = null;
 
     function sendBrowserMessage(obj) {
@@ -40,10 +39,9 @@ function popupOpen() {
          * If we have available tab for our URL, we are ready to analyze. Otherwise, 
          * we will not do any operation.
          */
-        var regex = /[a-zA-Z:\/]*\.*udemy\.com\/[a-zA-Z-_]*\/learn\/lecture/g;
+        var regex = /[a-zA-Z:\/]*\.*udemy\.com\/[a-zA-Z-_\/]*\/learn\/lecture/g;
         if (!tab || !(regex.test(tab.url))) {
-            // Make a good error handling here !!
-            console.log("Udemy Progress is not available on this URL.");
+            consoleLogger("Udemy Progress is not available on this URL.");
             return;
         }
 

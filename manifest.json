@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Udemy Progress",
-    "version": "0.1",
+    "version": "1.0.1",
     "description": "Calculate your udemy course progress not by number but length of lectures",
     "homepage_url": "https://github.com/burak-yildirim/udemy-progress",
     "icons": {
